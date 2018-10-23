@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TellUs</title>
+
+  <link rel="stylesheet" href="resources/sass/style.scss">
+  <link rel="stylesheet" href="resources/css/style.css">
+
+  <script src="resources/js/jquery-3.1.1.min.js"></script>
+  <script src="resources/js/viewcheck.js"></script>
+
+  <link rel="stylesheet" href="resources/js/animate.js">
+
+  <script src="resources/js/jquery.arcticmodal-0.3.min.js"></script>
+  <link rel="stylesheet" href="resources/js/jquery.arcticmodal-0.3.css">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="resources/js/maskedinput.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="nav-pannel">
+        <div class="logo">
+          <a href="index.html">
+            <img src="resources/img/logo.png" alt="TellUs" width="182" height="64">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="category.html">Категории</a>
+            </li>
+            <li>
+              <a href="about.html">О нас</a>
+            </li>
+            <li class="shopper">
+              <a href="shopper.html">Тайный покупатель</a>
+            </li>
+            <li class="nav-search">
+              <a href="">Поиск</a>
+              <div class="search_panel_head">
+                <form class="" action="" method="post">
+                  <input type="text" name="search" placeholder="Введи название заведения">
+                  <label for="search_ok"></label>
+                  <input type="submit" id="search_from_header" value="">
+                </form>
+              </div>
+            </li>
+            <li class="profile">
+              <a href="">Профиль</a>
+              <div class="profile-submenu">
+                <ul>
+                  <li>
+                    <a href="profile-settings.html">Настройки профиля</a>
+                  </li>
+                  <li>
+                    <a href="good-reviews.html">Положительные отзывы</a>
+                  </li>
+                  <li>
+                    <a href="bad-reviews.html">Отрицательные отзывы</a>
+                  </li>
+                  <li>
+                    <a href="statistic.html">Статистика</a>
+                  </li>
+                  <li>
+                    <a href="">Выйти из профиля</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mobile-menu">
+              <a href="">Меню</a>
+            </li>
+            <li>
+              <a href="" class="button partner">Стать партнером</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--Мобильное меню-->
+    <div style="display: none;">
+      <div class="box-modal mobile" id="mobile-menu">
+        <div class="box-modal_close arcticmodal-close close-mobile"></div>
+        <ul>
+          <li class="shopper">
+            <a href="shopper.html">Тайный покупатель</a>
+          </li>
+          <li>
+            <a href="about.html">О нас</a>
+          </li>
+          <li>
+            <a href="category.html">Категории</a>
+            <ul>
+              <li><a href="">Рестораны</a></li>
+              <li><a href="">Косметика и парфюмерия</a></li>
+              <li><a href="">Магазины одежды</a></li>
+              <li><a href="">Магазины бытовой техники</a></li>
+              <li><a href="">Цветочные магазины</a></li>
+              <li><a href="">Парикмахерские</a></li>
+              <li><a href="category_shops.html">Бары</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid about-page">
+      <div class="content text">
+        <h1>О нас</h1>
+        <p>
+          Добрый день, мы - команда молодых энтузиастов, и мы хотим наладить связь между руководством любого заведения и посетителем. Для этого мы представляем Вам наш сервис электронных отзывов, благодаря которому руководство заведения будет знать мнение своих
+          клиентов, а посетители получат возможность выразить благодарность или недовольство напрямую руководителю заведения и получить за это бонус.</p>
+        <h2>Наша команда:</h2>
+        <div class="actor">
+          <div>
+            <blockquote cite="http://">
+              <h4>Игнатов Никита – директор, автор идеи</h4>
+              <p> Я занимаюсь взаимодействием с партнерами и слежу за качеством предоставляемых нами услуг.</p>
+            </blockquote>
+          </div>
+          <img src="resources\img\about-3.jpg" alt="">
+
+        </div>
+        <div class="actor">
+          <img src="resources\img\about-1.jpg" class="vertical-img" alt="">
+          <div class="animated bounceInLeft">
+            <blockquote cite="http://">
+              <h4>Селиванов Павел – администратор</h4>
+              <p> Я слежу за тем, чтобы наши предложения были актуальны и сайт всегда был активен.</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="actor">
+          <div class="animated bounceInLeft">
+            <blockquote cite="http://">
+              <h4>Зверуго Владимир – мастер на все руки</h4>
+              <p>Моя задача состоит в решении любых вопросов, которые возникли у наших партнеров.</p>
+            </blockquote>
+          </div>
+          <img class="animated bounceInRight" src="resources\img\about-2.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="content">
+        <div class="main-footer">
+
+          <div class="footer-nav">
+            <a class="logo" href="index.html">
+                  <img src="resources\img\logo.png" alt="TellUs" width="182" height="64">
+                </a>
+            <ul>
+              <li>
+                <a href="">Категории</a>
+              </li>
+              <li>
+                <a href="">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <ul>
+              <li>
+                <p>
+                  <span>Свяжитесь с нами:</span>
+                  <br>+375445852882
+                </p>
+              </li>
+              <li><a href="" class="profile">Профиль</a></li>
+              <li>
+                <a href="" class="full-button ">Стать партнером</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright container-fluid">
+      <div class="content">
+        ©TellUs,2017 ИП "Игнатов Никита Александрович" УНП 192710796
+      </div>
+    </div>
+  </footer>
+  <div style="display: none;">
+    <div class="box-modal popup" id="authorization">
+      <div class="box-modal_close arcticmodal-close close-popup"></div>
+      <h4>Авторизация</h4>
+      <form action="">
+        <input type="text" name="auth-login" value="" placeholder="Логин">
+        <input type="password" name="auth-pass" value="" placeholder="Пароль">
+        <input type="submit" name="" class="full-button" value="Войти">
+      </form>
+    </div>
+  </div>
+
+  <div style="display: none;">
+    <div class="box-modal popup" id="partner">
+      <div class="box-modal_close arcticmodal-close close-popup"></div>
+      <h4>Стать партнером</h4>
+      <form action="">
+        <input type="text" name="partner-name" value="" placeholder="Как к вам обращаться">
+        <input type="text" name="partner-company" value="" placeholder="Название сети">
+        <input type="tel" name="partner-phone" value="" placeholder="+375 (__) ___-__-__">
+        <input type="submit" name="" class="full-button" value="Стать партнером">
+      </form>
+    </div>
+  </div>
+
+  <script src="resources/js/popap.js"></script>
+  <script src="resources/js/auth.js"></script>
+  <script src="resources/js/animations.js"></script>
+</body>
+
+</html>

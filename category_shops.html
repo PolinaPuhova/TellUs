@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TellUs</title>
+
+  <link rel="stylesheet" href="resources/sass/style.scss">
+  <link rel="stylesheet" href="resources/css/style.css">
+
+
+  <script src="resources/js/jquery-3.1.1.min.js"></script>
+
+  <script src="resources/js/dropkick/jquery.dropkick-min.js"></script>
+  <link rel="stylesheet" href="resources/js/dropkick/dropkick.css">
+
+  <script src="resources/js/jquery.arcticmodal-0.3.min.js"></script>
+  <link rel="stylesheet" href="resources/js/jquery.arcticmodal-0.3.css">
+
+  <script src="resources/js/maskedinput.min.js"></script>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="nav-pannel">
+        <div class="logo">
+          <a href="index.html">
+            <img src="resources/img/logo.png" alt="TellUs" width="182" height="64">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="category.html">Категории</a>
+            </li>
+            <li>
+              <a href="about.html">О нас</a>
+            </li>
+            <li class="shopper">
+              <a href="shopper.html">Тайный покупатель</a>
+            </li>
+            <li class="nav-search">
+              <a href="">Поиск</a>
+              <div class="search_panel_head">
+                <form class="" action="" method="post">
+                  <input type="text" name="search" placeholder="Введи название заведения">
+                  <label for="search_ok"></label>
+                  <input type="submit" id="search_from_header" value="">
+                </form>
+              </div>
+            </li>
+            <li class="profile">
+              <a href="">Профиль</a>
+              <div class="profile-submenu">
+                <ul>
+                  <li>
+                    <a href="profile-settings.html">Настройки профиля</a>
+                  </li>
+                  <li>
+                    <a href="good-reviews.html">Положительные отзывы</a>
+                  </li>
+                  <li>
+                    <a href="bad-reviews.html">Отрицательные отзывы</a>
+                  </li>
+                  <li>
+                    <a href="statistic.html">Статистика</a>
+                  </li>
+                  <li>
+                    <a href="">Выйти из профиля</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mobile-menu">
+              <a href="">Меню</a>
+            </li>
+            <li>
+              <a href="" class="button partner">Стать партнером</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--Мобильное меню-->
+    <div style="display: none;">
+      <div class="box-modal mobile" id="mobile-menu">
+        <div class="box-modal_close arcticmodal-close close-mobile"></div>
+        <ul>
+          <li class="shopper">
+            <a href="shopper.html">Тайный покупатель</a>
+          </li>
+          <li>
+            <a href="about.html">О нас</a>
+          </li>
+          <li>
+            <a href="category.html">Категории</a>
+            <ul>
+              <li><a href="">Рестораны</a></li>
+              <li><a href="">Косметика и парфюмерия</a></li>
+              <li><a href="">Магазины одежды</a></li>
+              <li><a href="">Магазины бытовой техники</a></li>
+              <li><a href="">Цветочные магазины</a></li>
+              <li><a href="">Парикмахерские</a></li>
+              <li><a href="category_shops.html">Бары</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid ">
+      <div class="content organisation-list-page">
+
+        <div class="description">
+          <h1>Бары</h1>
+          <p>Мы поможем получить скидку в любом твоем любимом заведении.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid black-bcg">
+      <div class="content organisation-list-page">
+        <!--Выбор сортировки-->
+        <form action="" name="sort-category" class="sort-category">
+          <select class="sort" name="sort" tabindex="2">
+            <option value="0">Все</option>
+            <option value="1" selected>Скидка</option>
+            <option value="2">Подарок</option>
+            <option value="3">Бонус</option>
+          </select>
+        </form>
+
+
+        <div class="organisation-list">
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+          <article class="organisation">
+            <a href="bar.html">
+              <div class="stock_image">
+                <img src="resources/img/new-stock3.jpg" alt="Mc Donald's" width="385" height="352">
+                <p class="stock_way">Косметика <span class="stock_discount">10%</span></p>
+              </div>
+              <div class="tegs">
+                <p class="tag">#парфюмерия</p>
+                <p class="tag">#косметика</p>
+                <p class="tag">#бытовая химия</p>
+              </div>
+              <h4>Мила</h4>
+              <p>10 заведений</p>
+            </a>
+          </article>
+
+
+        </div>
+        <div class="pagination">
+          <a href="">Назад</a>
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li class="active"><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+          </ul>
+          <a href="">Вперед</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="content">
+        <div class="main-footer">
+
+          <div class="footer-nav">
+            <a class="logo" href="index.html">
+              <img src="resources/img/logo.png" alt="TellUs" width="182" height="64">
+            </a>
+            <ul>
+              <li>
+                <a href="category.html">Категории</a>
+              </li>
+              <li>
+                <a href="about.html">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <ul>
+              <li>
+                <p>
+                  <span>Свяжитесь с нами:</span>
+                  <br>+375445852882
+                </p>
+              </li>
+              <li><a href="good-reviews.html" class="profile">Профиль</a></li>
+              <li>
+                <a href="" class="full-button partner">Стать партнером</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright container-fluid">
+      <div class="content">
+        ©TellUs,2017 ИП "Игнатов Никита Александрович" УНП 192710796
+      </div>
+    </div>
+  </footer>
+
+
+  <div style="display: none;">
+    <div class="box-modal popup" id="authorization">
+      <div class="box-modal_close arcticmodal-close close-popup"></div>
+      <h4>Авторизация</h4>
+      <form action="">
+        <input type="text" name="auth-login" value="" placeholder="Логин">
+        <input type="password" name="auth-pass" value="" placeholder="Пароль">
+        <input type="submit" name="" class="full-button" value="Войти">
+      </form>
+    </div>
+  </div>
+
+  <div style="display: none;">
+    <div class="box-modal popup" id="partner">
+      <div class="box-modal_close arcticmodal-close close-popup"></div>
+      <h4>Стать партнером</h4>
+      <form action="">
+        <input type="text" name="partner-name" value="" placeholder="Как к вам обращаться">
+        <input type="text" name="partner-company" value="" placeholder="Название сети">
+        <input type="tel" name="partner-phone" value="" placeholder="+375 (__) ___-__-__">
+        <input type="submit" name="" class="full-button" value="Стать партнером">
+      </form>
+    </div>
+  </div>
+
+  <script>
+    $(function() {
+      $('.sort').dropkick({
+        startSpeed: 400, // the speed of fade in effect. A low value (lowest is probably 100) to stop the effect.
+        theme: 'black',
+        change: function(value, label) { // callback event
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.metro').dropkick({
+        startSpeed: 400, // the speed of fade in effect. A low value (lowest is probably 100) to stop the effect.
+        theme: 'black',
+        change: function(value, label) { // callback event
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+    });
+  </script>
+
+
+  <script src="resources/js/drop.js"></script>
+  <script src="resources/js/popap.js"></script>
+  <script src="resources/js/auth.js"></script>
+  <script src="resources/js/header.js"></script>
+</body>
+
+</html>

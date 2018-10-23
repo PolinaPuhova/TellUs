@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TellUs</title>
+  <link rel="text/plain" href="resources/sass/style.scss">
+  <link rel="stylesheet" href="resources/css/style.css">
+
+  <script src="resources/js/images-loaded.js"></script>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="resources/js/jquery-3.1.1.min.js"></script>
+
+  <script src="resources/js/RGraph.common.core.js"></script>
+  <script src="resources/js/RGraph.common.dynamic.js"></script>
+  <script src="resources/js/RGraph.common.tooltips.js"></script>
+  <script src="resources/js/RGraph.bar.js"></script>
+
+  <script src="resources/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="resources/css/diagramm.css">
+  <script src="resources/js/diagramm.js"></script>
+
+  <script src="resources/js/jquery.arcticmodal-0.3.min.js"></script>
+  <link rel="stylesheet" href="resources/js/jquery.arcticmodal-0.3.css">
+
+  <script src="resources/js/maskedinput.min.js"></script>
+    <script src="resources/js/range/nativemultiple.jquery.min.js"></script>
+    <link rel="stylesheet" href="resources/js/range/stylesheets/slider.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="nav-pannel">
+        <div class="logo">
+          <a href="index.html">
+            <img src="resources/img/logo.png" alt="TellUs" width="182" height="64">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="category.html">Категории</a>
+            </li>
+            <li>
+              <a href="about.html">О нас</a>
+            </li>
+            <li class="shopper">
+              <a href="shopper.html">Тайный покупатель</a>
+            </li>
+            <li class="nav-search">
+              <a href="">Поиск</a>
+              <div class="search_panel_head">
+                <form class="" action="" method="post">
+                  <input type="text" name="search" placeholder="Введи название заведения">
+                  <label for="search_ok"></label>
+                  <input type="submit" id="search_from_header" value="">
+                </form>
+              </div>
+            </li>
+            <li class="profile">
+              <a href="">Профиль</a>
+              <div class="profile-submenu">
+                <ul>
+                  <li>
+                    <a href="profile-settings.html">Настройки профиля</a>
+                  </li>
+                  <li>
+                    <a href="good-reviews.html">Положительные отзывы</a>
+                  </li>
+                  <li>
+                    <a href="bad-reviews.html">Отрицательные отзывы</a>
+                  </li>
+                  <li>
+                    <a href="statistic.html">Статистика</a>
+                  </li>
+                  <li>
+                    <a href="">Выйти из профиля</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mobile-menu">
+              <a href="">Меню</a>
+            </li>
+            <li>
+              <a href="" class="button partner">Стать партнером</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--Мобильное меню-->
+    <div style="display: none;">
+      <div class="box-modal mobile" id="mobile-menu">
+        <div class="box-modal_close arcticmodal-close close-mobile"></div>
+        <ul>
+          <li class="shopper">
+            <a href="shopper.html">Тайный покупатель</a>
+          </li>
+          <li>
+            <a href="about.html">О нас</a>
+          </li>
+          <li>
+            <a href="category.html">Категории</a>
+            <ul>
+              <li><a href="">Рестораны</a></li>
+              <li><a href="">Косметика и парфюмерия</a></li>
+              <li><a href="">Магазины одежды</a></li>
+              <li><a href="">Магазины бытовой техники</a></li>
+              <li><a href="">Цветочные магазины</a></li>
+              <li><a href="">Парикмахерские</a></li>
+              <li><a href="category_shops.html">Бары</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="content">
+        <h1>Профиль</h1>
+        <p>Возможность увидеть, что нужно вашим клиентам, поток клиентов, узнавших о вас у нас на сайте, а так же это дешево и вы сможете быть на равне с заведениями любого класса</p>
+        <div class="content-for-profile">
+
+          <!--Блок с левым меню-->
+          <div class="profile-menu">
+            <div class="image">
+              <img src="resources/img/new-stock2.jpg" alt="">
+            </div>
+            <div class="profile-con">
+              <div class="profile-description">
+                <h3>Топас бар</h3>
+                <div class="rating">
+
+                  <p>Рейтинг <span>4</span>/5</p>
+
+                  <div class="review-stars">
+                    <div class="star-1">
+                      <svg>
+                      <use xlink:href='#star' />
+                    </svg>
+                    </div>
+                    <div class="star-2">
+                      <svg>
+                        <use xlink:href='#star' />
+                      </svg>
+                    </div>
+                    <div class="star-3">
+                      <svg>
+                        <use xlink:href='#star' />
+                      </svg>
+                    </div>
+                    <div class="star-4 active-star">
+                      <svg>
+                        <use xlink:href='#star' />
+                      </svg>
+                    </div>
+                    <div class="star-5">
+                      <svg>
+                        <use xlink:href='#star' />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="org-category">Категория <span>Бар</span></p>
+                <div class="tegs">
+                  <div class="tag">#бургеры</div>
+                  <div class="tag">#кафе</div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-list">
+              <ul>
+                <li><a href="profile-settings.html">
+                  <svg>
+                      <use xlink:href='#profile' />
+                  </svg>
+                  Настройки профиля</a></li>
+                <li>
+                  <a href="good-reviews.html">
+                  <svg>
+                      <use xlink:href='#good-reviews' />
+                  </svg>
+                  Положительные отзывы</a></li>
+                <li>
+                  <a href="bad-reviews.html">
+                <svg>
+                    <use xlink:href='#bad-review' />
+                </svg>
+                Отрицательные отзывы</a></li>
+                <li class="active">
+                  <a href="statistic.html">
+                  <svg>
+                      <use xlink:href='#statistic' />
+                  </svg>
+                  Статистика</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="profile-content">
+            <div class="statistic">
+              <h3>Статистика</h3>
+              <div class="statistic-info">
+                <div class="quantity-views">
+                  <p><span>634</span><br> просмотров профиля</p>
+                </div>
+                <div class="statistic-text">
+                  <p>Приведена статистика за период <br>с <span class="from">июня 2017</span> по <span class="to">декабрь 2017</span></p>
+                  <div class="range">
+                    <div class="values">
+                      <p id="from-date">Январь</p>
+                      <p id="to-date">Декабрь</p>
+                    </div>
+                    <div id="slider"><input type="range" name="date-from-to" min="1" max="12" step="1" value="1,12" /></div>
+                  </div>
+                </div>
+              </div>
+              <div id="statistic-bar">
+                <canvas id="bar" width="724" height="350">[No canvas support]</canvas>
+              </div>
+              <div class="statistic-quantity">
+                <p>Возможность увидеть, что нужно вашим клиентам, поток клиентов, узнавших о вас у нас на сайте, а так же это дешево и вы сможете быть на равне с заведениями любого класса</p>
+                <div class="diagramm">
+                  <div id="rating-diagramm">
+                    <p class="all-grades">434</p>
+                    <p>оценок рейтинга</p>
+                  </div>
+                  <div id="good-review-diagramm">
+                    <p class="good-grades">157</p>
+                    <p>положительные</p>
+                  </div>
+                  <div id="bad-review-diagramm">
+                    <p class="bad-grades">15</p>
+                    <p>отрицательные</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="content">
+        <div class="main-footer">
+          <div class="footer-nav">
+            <a class="logo" href="index.html">
+              <img src="resources/img/logo.png" alt="TellUs" width="182" height="64">
+            </a>
+            <ul>
+              <li>
+                <a href="">Категории</a>
+              </li>
+              <li>
+                <a href="about.html">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <ul>
+              <li>
+                <span>Свяжитесь с нами:</span>
+                <br>+375445852882
+              </li>
+              <li><a href="" class="profile">Профиль</a></li>
+              <li>
+                <a href="" class="full-button partner">Стать партнером</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright container-fluid">
+      <div class="content">
+        ©TellUs,2017 ИП "Игнатов Никита Александрович" УНП 192710796
+      </div>
+    </div>
+  </footer>
+
+  <div style="display: none;">
+    <div class="box-modal popup" id="partner">
+      <div class="box-modal_close arcticmodal-close close-popup"></div>
+      <h4>Стать партнером</h4>
+      <form action="">
+        <input type="text" name="partner-name" value="" placeholder="Как к вам обращаться">
+        <input type="text" name="partner-company" value="" placeholder="Название сети">
+        <input type="tel" name="partner-phone" value="" placeholder="+375 (__) ___-__-__">
+        <input type="submit" name="" class="full-button" value="Стать партнером">
+      </form>
+    </div>
+  </div>
+
+  <svg style="display: none;">
+    <symbol viewBox="0 0 18.18 17" id="star">
+      <path d="M1018.21,1225.7a1.263,1.263,0,0,0,.33-1.3,1.293,1.293,0,0,0-1.06-.87l-4.41-.62a0.6,0.6,0,0,1-.43-0.31l-1.97-3.89a1.319,1.319,0,0,0-2.34,0l-1.97,3.89a0.577,0.577,0,0,1-.43.31l-4.41.62a1.293,1.293,0,0,0-1.06.87,1.263,1.263,0,0,0,.33,1.3l3.19,3.03a0.558,0.558,0,0,1,.17.5l-0.75,4.27a1.226,1.226,0,0,0,.28,1.04,1.356,1.356,0,0,0,1.61.31l3.94-2.02a0.574,0.574,0,0,1,.54,0l3.94,2.02a1.434,1.434,0,0,0,.61.14,1.321,1.321,0,0,0,1-.45,1.226,1.226,0,0,0,.28-1.04l-0.75-4.27a0.558,0.558,0,0,1,.17-0.5Z"
+        transform="translate(-1000.41 -1218)" />
+    </symbol>
+    <symbol viewBox="0 0 22 22" id="bad-review">
+      <path  d="M408.846,954c1.033,0,.685-2.171.685-2.171s2.208-5.986,4.32-7.581a4.567,4.567,0,0,0,.914-1.407h0c0.041-.1.078-0.2,0.11-0.292a2.713,2.713,0,0,1,1.088-1.1l-2.112-9.028a50.881,50.881,0,0,0-6.546-.351,14.126,14.126,0,0,0-3.807.122c-3.758.786-2.816,3.361-2.816,3.361a2.5,2.5,0,0,0-.873,3.366,2.239,2.239,0,0,0-.032,3.4,2.055,2.055,0,0,0,.283,2.62c1.568,1.411,5.824.471,5.824,0.471h0c0.3-.049.612-0.112,0.95-0.193,0,0,1.472-.674,0,3.717S407.813,954,408.846,954Zm6.522-20.929,1.6,7.474a1.04,1.04,0,0,0,.974.777H421l0-9.024h-4.987A0.619,0.619,0,0,0,415.368,933.071Z" transform="translate(-399 -932)"/>
+    </symbol>
+    <symbol viewBox="0 0 20 24" id="statistic">
+      <path d="M400,986h4v24h-4V986Zm8,17h4v7h-4v-7Zm8-8h4v15h-4V995Z" transform="translate(-400 -986)"/>
+    </symbol>
+    <symbol  viewBox="0 0 22 22" id="good-reviews">
+      <path  d="M411.154,874c-1.033,0-.685,2.171-0.685,2.171s-2.208,5.986-4.32,7.581a4.557,4.557,0,0,0-.914,1.406h0c-0.041.1-.078,0.2-0.11,0.292a2.708,2.708,0,0,1-1.088,1.1l2.112,9.028a50.775,50.775,0,0,0,6.546.35,14.087,14.087,0,0,0,3.807-.121c3.758-.786,2.816-3.361,2.816-3.361a2.5,2.5,0,0,0,.873-3.366,2.239,2.239,0,0,0,.032-3.4,2.055,2.055,0,0,0-.283-2.62c-1.568-1.411-5.824-.472-5.824-0.472h0c-0.3.05-.612,0.113-0.951,0.194,0,0-1.471.674,0-3.717S412.187,874,411.154,874Zm-6.523,20.928-1.6-7.473a1.041,1.041,0,0,0-.974-0.778h-3.053l0,9.024h4.987A0.618,0.618,0,0,0,404.631,894.928Z" transform="translate(-399 -874)"/>
+    </symbol>
+    <symbol   viewBox="0 0 16 17" id="profile">
+        <path  d="M1102,83.5a4.291,4.291,0,0,0,3.09-1.245,4.191,4.191,0,0,0,0-6.011,4.458,4.458,0,0,0-6.18,0,4.191,4.191,0,0,0,0,6.011A4.291,4.291,0,0,0,1102,83.5Zm7.96,4.489a10.879,10.879,0,0,0-.46-2.408,5.242,5.242,0,0,0-.49-1.079,3.9,3.9,0,0,0-.7-0.9,3.045,3.045,0,0,0-.97-0.593,3.553,3.553,0,0,0-1.27-.221,1.394,1.394,0,0,0-.48.238c-0.25.159-.53,0.336-0.85,0.531a5.35,5.35,0,0,1-1.22.531,4.969,4.969,0,0,1-3.04,0,5.656,5.656,0,0,1-1.23-.531l-0.84-.531a1.394,1.394,0,0,0-.48-0.238,3.553,3.553,0,0,0-1.27.221,3.045,3.045,0,0,0-.97.593,3.9,3.9,0,0,0-.7.9,5.242,5.242,0,0,0-.49,1.079,10.879,10.879,0,0,0-.46,2.408c-0.03.373-.04,0.754-0.04,1.146a2.7,2.7,0,0,0,.83,2.1,3.107,3.107,0,0,0,2.2.769h9.94a3.107,3.107,0,0,0,2.2-.769,2.7,2.7,0,0,0,.83-2.1C1110,88.743,1109.99,88.361,1109.96,87.988Z" transform="translate(-1094 -75)"/>
+    </symbol>
+    </svg>
+
+  <script src="resources/js/header.js"></script>
+  <script src="resources/js/popap.js"></script>
+  <script src="resources/js/statistic-bar.js"></script>
+</body>
+
+</html>
